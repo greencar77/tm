@@ -42,7 +42,7 @@ class VAtlantsView extends View {
         }
         let actualDay = getDaysDelta(entry.start.date, window.viewStatus.date);
         let maxDay = getDaysDelta(entry.start.date, entry.end.date);
-        result.innerHTML = createProgress(actualDay, maxDay);
+        result.innerHTML = createProgress(actualDay, maxDay, entry.end.prec == -1? 'unended': null);
         return result;
     }
 }

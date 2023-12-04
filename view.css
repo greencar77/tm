@@ -37,3 +37,9 @@ td {
 .eventTable {
     margin-top: 8px;
 }
+
+.unended {
+    padding: 0;
+    margin: 0;
+    background-color: darkgray;
+}

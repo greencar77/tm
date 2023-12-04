@@ -75,7 +75,7 @@ class PersView extends View {
             return;
         }
         let actualDay = getDaysDelta(entry.start.date, window.viewStatus.date);
-        result.innerHTML = createProgress(actualDay, entry.end.delta);
+        result.innerHTML = createProgress(actualDay, entry.end.delta, entry.end.prec == -1? 'unended': null);
         return result;
     }
 }

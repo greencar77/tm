@@ -13,23 +13,16 @@ function getParamMap() {
 function createDateFromRichString(string) {
     if (string.indexOf('/') > -1) {
         let parts = string.split('/');
+        if (parts[1] == '.') {
+            return { 'date': parts[0], 'prec': -1};
+        }
         return { 'date': parts[0], 'prec': parseInt(parts[1])};
     } else {
         return { 'date': string, 'prec': 3 };
     }
 }
 
-/*
-function createBar(value, max, className) {
-    if (!value || !max || max == 0 || value == 0) {
-        return '';
-    }
-    let widthPerc = Math.round(value * 100 * 10 / max) / 10; //1 decimal place
-    return '<table width="100%"><tr><td class="' + className + '" width="' + widthPerc + '%" height="30px"></td><td></td></tr></table>';
-}
-*/
-
-function createProgress(value, max) {
+function createProgress(value, max, className) {
     if (value == 0 && max > 0) {
         return '<table width="100px" class="progressbar_table><tr class="progressbar_tr">'
             + '<td class="progressbar_td2" width="100%" height="12px"></td>'
@@ -40,7 +33,7 @@ function createProgress(value, max) {
     }
     let widthPerc = Math.round(value * 100 * 10 / max) / 10; //1 decimal place
     return '<table width="100px" class="progressbar_table><tr class="progressbar_tr">'
-        + '<td class="progressbar_td1" width="' + widthPerc + '%" height="12px"></td>'
+        + '<td class="' + (className? className : 'progressbar_td1') + '" width="' + widthPerc + '%" height="12px"></td>'
         + '<td class="progressbar_td2"></td>'
         + '</tr></table>';
 }

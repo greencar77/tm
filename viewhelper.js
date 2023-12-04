@@ -21,9 +21,10 @@ function preparePersonData(arr) {
 }
 
 function fillDefaultDates(arr) {
+    let now = (new Date()).toISOString().replace(/-/g, '.').split('T')[0];
     arr.forEach(e => {
         if (e.d.endsWith('-')) {
-            e.d = e.d + (parseInt(e.d.substring(0, 4)) + 999).toString() + '.12.31/0';
+            e.d = e.d + now + '/.';
         }
         });
 }
@@ -74,7 +75,9 @@ function createDateCell(entry) {
         dateTd.textContent = createDisplayDate(entry.start);
     } else {
         dateTd.textContent = createDisplayDate(entry.start) + ' - ' + createDisplayDate(entry.end)
-            + ' (' + asYears(getDaysDelta(entry.start.date, window.viewStatus.date)) + '/' + asYears(getDaysDelta(entry.start.date, entry.end.date)) + ')';
+            + ' (' + asYears(getDaysDelta(entry.start.date, window.viewStatus.date))
+               + (entry.end.prec == -1? '': '/' + asYears(getDaysDelta(entry.start.date, entry.end.date)))
+            + ')';
     }
     return dateTd;
 }
