@@ -1,0 +1,27 @@
+
+table.progressbar_table {
+    border-collapse: separate;
+	border-width: 1px;
+	border-spacing: 0;
+	border-style: outset;
+	border-color: gray;
+	table-layout: fixed;
+	display: inline;
+}
+
+tr.progressbar_tr {
+    padding: 0;
+    margin: 0;
+}
+
+td.progressbar_td1 {
+    padding: 0;
+    margin: 0;
+    background-color: brown;
+}
+
+td.progressbar_td2 {
+    padding: 0;
+    margin: 0;
+    background-color: lightgray;
+}

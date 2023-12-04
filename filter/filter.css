@@ -1,0 +1,50 @@
+filterdemo-panel {
+    display: block;
+}
+
+.pickedTag {
+  background-color: lightgray;
+  border-radius: 30%;
+  padding-right: 4px;
+  padding-left: 4px;
+}
+
+.pickableTag {
+  background-color: lightgreen;
+  border-radius: 30%;
+  padding-right: 4px;
+  padding-left: 4px;
+}
+
+.tagCombo {
+  background-color: lightgreen;
+  margin-right: 4px;
+  margin-left: 4px;
+}
+
+.randomToggle {
+  padding-left: 4px;
+}
+
+table.filter {
+	border-width: 1px;
+	border-spacing: 2px;
+	border-style: outset;
+	border-color: gray;
+	border-collapse: collapse;
+	background-color: transparent;
+	table-layout: fixed;
+}
+
+td.filter {
+	border-width: 1px;
+	padding: 4px;
+	border-style: inset;
+	border-color: gray;
+	background-color: transparent;
+	-moz-border-radius: 0px 0px 0px 0px;
+	vertical-align: top;
+	word-wrap: break-word;
+}
+
+
