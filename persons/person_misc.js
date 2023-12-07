@@ -119,3 +119,29 @@ var fyfwmby6543_012ooy = [
         'v': 'Izlaista filma "Сказка"',
     },
 ];
+
+(() => {
+  registerPerson(
+    {
+        "id": "fgck2v",
+        "name": "Napoleons", "surname": "Bonaparts",
+        "d": "1769.08.15-1821.05.05",
+        "tags": "",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Napoleon",
+    }
+  );
+})();
+var fyfwmby6543_fgck2v = [
+    {
+        'd': '1804.05.18-1814.05.03',
+        'v': 'Francijas imperators (Empereur des Français)',
+    },
+    {
+        'd': '1815.03.20-1815.07.07',
+        'v': 'Francijas imperators (otrs periods)',
+    },
+    {
+        'd': '1803.01.01/1-1815.12.31/1',
+        'v': 'Napoleona kari',
+    },
+];
