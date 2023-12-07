@@ -39,6 +39,22 @@ class ViewEngine {
                     });
             }
         );
+
+        fyfwmby6543_timelines.forEach(p => {
+                if (!p.tags) {
+                    p.tags = [];
+                } else {
+                    p.tags = p.tags.split(',');
+                }
+
+                [ "lv" ]
+                    .forEach(t => {
+                        if (!p.tags.includes(t)) {
+                            p.tags.push(t + '-');
+                        }
+                    });
+            }
+        );
     }
 
     renderDateTitle(date) {
@@ -50,9 +66,12 @@ class ViewEngine {
         let viewId = paramMap.get('v');
         if (viewId == 'pers') {
             return new PersView(paramMap.get('p'));
+        } else if (viewId == 'tl') {
+            return new TimelineView(paramMap.get('p'));
         }
         switch(viewId) {
             case 'person_list': return new PersonListView();
+            case 'timeline_list': return new TimelineListView();
 
             case 'seja_l': return new SejaView();
             case 'cakste_k': return new CaksteKView();

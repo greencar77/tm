@@ -1,12 +1,11 @@
 "use strict";
 
-class PersView extends View {
+class TimelineView extends View {
 
     constructor(id) {
         super();
         this.id = id;
-        this.person = fyfwmby6543_persons.filter(e => e.id == this.id)[0]; //TODO dirty
-        preparePersonData([this.person]);
+        this.init();
     }
 
     getId() {
@@ -14,11 +13,16 @@ class PersView extends View {
     }
 
     getTitle() {
-        return this.person.name + ' ' + this.person.surname;
+        return this.entry.title;
+    }
+
+    init() {
+        this.entry = fyfwmby6543_timelines.filter(e => e.id == this.id)[0]; //TODO dirty
+        prepareTimelineData([this.entry]);
     }
 
     render() {
-        console.log('Render PersView');
+        console.log('Render TimelineView');
         let main = document.getElementById('mainview');
 
         this.renderPersInfo(main);
@@ -27,7 +31,7 @@ class PersView extends View {
             window['fyfwmby6543_' + this.id] = [];
         }
         let data = window['fyfwmby6543_' + this.id];
-        data.push({ 'd': this.person.d, 'v': 'Mūžs'});
+        data.push({ 'd': this.entry.d, 'v': 'Periods'});
         expandDates(data);
         data = data.filter(e => e.start.date <= window.viewStatus.date && window.viewStatus.date <= e.end.date);
         data.sort(entrySorterByDelta);
@@ -51,17 +55,17 @@ class PersView extends View {
     renderPersInfo(parent) {
         let div = document.createElement('div');
         let birthDeathEl = document.createElement('p');
-        birthDeathEl.textContent = createDisplayDate(this.person.start) + ' - ' + createDisplayDate(this.person.end);
+        birthDeathEl.textContent = createDisplayDate(this.entry.start) + ' - ' + createDisplayDate(this.entry.end);
         div.appendChild(birthDeathEl);
-        if (this.person.wikiUrl) {
+        if (this.entry.wikiUrl) {
             let wikiA = document.createElement('a');
-            wikiA.setAttribute('href', this.person.wikiUrl);
+            wikiA.setAttribute('href', this.entry.wikiUrl);
             wikiA.textContent = '[Wiki]';
             div.appendChild(wikiA);
         }
-        if (this.person.timenote) {
+        if (this.entry.timenote) {
             let wikiA = document.createElement('a');
-            wikiA.setAttribute('href', 'https://timenote.info/lv/' + this.person.timenote);
+            wikiA.setAttribute('href', 'https://timenote.info/lv/' + this.entry.timenote);
             wikiA.textContent = '[TimeNote]';
             div.appendChild(wikiA);
         }

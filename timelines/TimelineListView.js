@@ -1,6 +1,6 @@
 "use strict";
 
-class PersonListView extends View {
+class TimelineListView extends View {
     filterConfig = {
             "tagPropName": "tags",
             "filters": null,
@@ -43,7 +43,7 @@ class PersonListView extends View {
     }
 
     getTitle() {
-        return 'Personas';
+        return 'Laika skalas';
     }
 
     render() {
@@ -53,10 +53,10 @@ class PersonListView extends View {
         filterPanel.id = 'f1';
         main.appendChild(filterPanel);
 
-        let data = fyfwmby6543_persons;
+        let data = fyfwmby6543_timelines;
         prepareTimelineData(data);
         data = data.filter(e => e.start.date <= window.viewStatus.date && window.viewStatus.date <= e.end.date);
-        data.sort(this.entrySorterBySurnameName);
+        data.sort(this.entrySorterByTitle);
 
         this.filterApp = new FilterCore(data, this.filterConfig);
         this.filterApp.init();
@@ -71,7 +71,7 @@ class PersonListView extends View {
         if (!e.id) {
             alert('Missing id ' + e.name + ' ' + e.surname);
         }
-        contentTd.innerHTML = '<a href="view.html?d=' + window.viewStatus.date + '&v=pers&p=' + e.id + '">' + e.name + ' ' + e.surname + '</a>';
+        contentTd.innerHTML = '<a href="view.html?d=' + window.viewStatus.date + '&v=tl&p=' + e.id + '">' + e.title + '</a>';
         tr.appendChild(contentTd);
 
         return tr;
@@ -96,9 +96,9 @@ class PersonListView extends View {
         return result;
     }
 
-    entrySorterBySurnameName(a, b) {
-        let an = a.surname + '_' + a.name;
-        let bn = b.surname + '_' + b.name;
+    entrySorterByTitle(a, b) {
+        let an = a.title;
+        let bn = b.title;
         if (an < bn) {
             return -1;
         }

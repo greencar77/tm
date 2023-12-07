@@ -14,7 +14,11 @@ function entrySorterByDelta(a, b) {
     return b.end.delta - a.end.delta;
 }
 
-function preparePersonData(arr) {
+function prepareTimelineData(arr) {
+    if (!arr || !arr[0]) {
+        alert('Invalid timeline!');
+        return;
+    }
     fillDefaultDates(arr);
     expandDates(arr);
     populateTags(arr);
@@ -23,6 +27,10 @@ function preparePersonData(arr) {
 function fillDefaultDates(arr) {
     let now = (new Date()).toISOString().replace(/-/g, '.').split('T')[0];
     arr.forEach(e => {
+        if (!e) {
+            alert('Invalid timeline entry!');
+            return;
+        }
         if (e.d.endsWith('-')) {
             e.d = e.d + now + '/.';
         }
@@ -48,6 +56,8 @@ function expandDates(arr) {
 
 function populateTags(arr) {
     arr.forEach(e => {
+        if (!e.tags)
+
         if (e.wikiUrl) {
             e.tags.push('wiki');
         } else {
@@ -84,4 +94,8 @@ function createDateCell(entry) {
 
 function registerPerson(p) {
     fyfwmby6543_persons.push(p);
+}
+
+function registerTimeline(p) {
+    fyfwmby6543_timelines.push(p);
 }
