@@ -145,3 +145,18 @@ var fyfwmby6543_fgck2v = [
         'v': 'Napoleona kari',
     },
 ];
+
+var fyfwmby6543_7pqeas = [
+    {
+        'd': '1946.11.01/2-1951.12.31/1',
+        'v': 'Apcietinājums un izsūtījums uz Austrumurālu labošanas darbu nometni ("Vosturallag")',
+    },
+    {
+        'd': '1970.01.01/1-1970.12.31/0',
+        'v': '2. apcietinājums, Iļģuciema cietums',
+    },
+    {
+        'd': '1983.01.06/3-1987.01.14/3',
+        'v': '3. apcietinājums ar izsūtījumu uz Altaju',
+    },
+];

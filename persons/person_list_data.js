@@ -27,7 +27,7 @@ const fyfwmby6543_persons = [
         "name": "Lidija", "surname": "Doroņina-Lasmane",
         "d": "1925.07.28-",
         "tags": "lv",
-        "url_wiki": "https://en.wikipedia.org/wiki/Lidija_Doro%C5%86ina-Lasmane",
+        "url_wiki": "https://lv.wikipedia.org/wiki/Lidija_Doro%C5%86ina-Lasmane",
         "events": [
             {
                 "content": "Mežaparks",

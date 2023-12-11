@@ -94,4 +94,24 @@ var fyfwmby6543_lzjfld = [
         'd': '1944.09.10/2-1946.12.31/1',
         'v': 'Polija',
     },
+    {
+        'd': '1946.01.24-1946.12.28',
+        'v': 'pavada dzāždos cietumos Polijā un Maskavā kamēr tiek veikta izmeklēšana',
+    },
+    {
+        'd': '1947.01.13-1947.02.01',
+        'v': 'Tiek transportēts ar vilcienu uz Uhtu',
+    },
+    {
+        'd': '1947.02.01-1951.04.30',
+        'v': 'Nometinājumā Uhtas apgabalā, Krievijā',
+    },
+    {
+        'd': '1951.04.30',
+        'v': 'Palaists brīvībā no nometnes, dodas uz Uhtu',
+    },
+    {
+        'd': '1946.12.28/2-1951.04.30',
+        'v': 'Piespriesti 5 gadi nometinājumā, paziņots 1946.12.28',
+    },
 ];
