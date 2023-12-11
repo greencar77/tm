@@ -98,4 +98,18 @@ const fyfwmby6543_persons = [
         "tags": "min_for",
         "wikiUrl": "https://en.wikipedia.org/wiki/Vyacheslav_Molotov",
     },
+    {
+        "id": "xq7l6w",
+        "name": "Giacomo", "surname": "Puccini",
+        "d": "1858.12.22-1924.11.29",
+        "tags": "mus",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Giacomo_Puccini",
+    },
+    {
+        "id": "gmutzw",
+        "name": "Giuseppe", "surname": "Verdi",
+        "d": "1813.10.10-1901.01.27",
+        "tags": "mus",
+        "wikiUrl": "https://en.wikipedia.org/wiki/Giuseppe_Verdi",
+    },
 ];

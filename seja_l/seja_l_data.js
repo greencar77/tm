@@ -8,6 +8,7 @@
         "d": "1885.06.02-1962.02.15",
         "tags": "lv,min_for",
         "wikiUrl": "https://lv.wikipedia.org/wiki/Ludvigs_S%C4%93ja",
+        "timenote": "Ludvigs-Seja",
     }
   );
 })();
@@ -54,6 +55,10 @@ var fyfwmby6543_lzjfld = [
         'v': 'Dēls Andris',
     },
     {
+        'd': '1919.07.01/1-1962.02.15',
+        'v': 'Meita Mirdza',
+    },
+    {
         'd': '1942.06.14',
         'v': 'Apmeklē izvesto tautiešu piemiņas dievkalpojumu Sv. Jāņa baznīcā',
     },
@@ -80,5 +85,13 @@ var fyfwmby6543_lzjfld = [
     {
         'd': '1935.01.01/0-1943.03.06/3',
         'v': 'Hipotēka lauku mājai, 1943.03.06 nomaksāts atlikums 37500 Ls',
+    },
+    {
+        'd': '1946.01.24',
+        'v': 'Polijā, Lauenburgā NKVD apcietina kopā ar Navaku',
+    },
+    {
+        'd': '1944.09.10/2-1946.12.31/1',
+        'v': 'Polija',
     },
 ];
