@@ -3,9 +3,9 @@
 class ResourceLink {
 
     static wiki(entry) {
-        if (entry.wikiUrl) {
+        if (entry.url_wiki) {
             let result = document.createElement('a');
-            result.setAttribute('href', entry.wikiUrl);
+            result.setAttribute('href', entry.url_wiki);
             result.textContent = '[Wiki]';
             return result;
         }

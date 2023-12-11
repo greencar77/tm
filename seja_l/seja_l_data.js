@@ -7,7 +7,7 @@
         "name": "Ludvigs", "surname": "Sēja",
         "d": "1885.06.02-1962.02.15",
         "tags": "lv,min_for",
-        "wikiUrl": "https://lv.wikipedia.org/wiki/Ludvigs_S%C4%93ja",
+        "url_wiki": "https://lv.wikipedia.org/wiki/Ludvigs_S%C4%93ja",
         "timenote": "Ludvigs-Seja",
     }
   );

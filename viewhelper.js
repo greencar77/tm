@@ -56,12 +56,10 @@ function expandDates(arr) {
 
 function populateTags(arr) {
     arr.forEach(e => {
-        if (!e.tags)
-
-        if (e.wikiUrl) {
-            e.tags.push('wiki');
+        if (e.url_wiki) {
+            e.tags.push('url_wiki');
         } else {
-            e.tags.push('wiki-');
+            e.tags.push('url_wiki-');
         }
         });
 }

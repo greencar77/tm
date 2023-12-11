@@ -14,7 +14,7 @@ var fyfwmby6543_0hk8lt = [
         "name": "Rudolfs", "surname": "Bangerskis",
         "d": "1878.07.21-1958.02.25",
         "tags": "lv",
-        "wikiUrl": "https://de.wikipedia.org/wiki/R%C5%ABdolfs_Bangerskis",
+        "url_wiki": "https://de.wikipedia.org/wiki/R%C5%ABdolfs_Bangerskis",
     }
   );
 })();
@@ -81,7 +81,7 @@ var fyfwmby6543_8tpayk = [
         "name": "Samuel", "surname": "Barber",
         "d": "1910.03.09-1981.01.23",
         "tags": "mus,comp",
-        "wikiUrl": "https://en.wikipedia.org/wiki/Samuel_Barber",
+        "url_wiki": "https://en.wikipedia.org/wiki/Samuel_Barber",
     }
   );
 })();
@@ -108,7 +108,7 @@ var fyfwmby6543_dhbstd = [
         "name": "Aleksandrs", "surname": "Sokurovs",
         "d": "1951.06.14-",
         "tags": "",
-        "wikiUrl": "https://en.wikipedia.org/wiki/Alexander_Sokurov",
+        "url_wiki": "https://en.wikipedia.org/wiki/Alexander_Sokurov",
     }
   );
 })();
@@ -127,7 +127,7 @@ var fyfwmby6543_012ooy = [
         "name": "Napoleons", "surname": "Bonaparts",
         "d": "1769.08.15-1821.05.05",
         "tags": "",
-        "wikiUrl": "https://en.wikipedia.org/wiki/Napoleon",
+        "url_wiki": "https://en.wikipedia.org/wiki/Napoleon",
     }
   );
 })();
