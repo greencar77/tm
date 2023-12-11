@@ -61,6 +61,11 @@ function populateTags(arr) {
         } else {
             e.tags.push('url_wiki-');
         }
+        if (e.url_timenote) {
+            e.tags.push('url_timenote');
+        } else {
+            e.tags.push('url_timenote-');
+        }
         });
 }
 

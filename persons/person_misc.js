@@ -33,7 +33,7 @@ var fyfwmby6543_6chcl9 = [
         "name": "Alberts", "surname": "Dāboliņš",
         "d": "1912.01.01/1-1943.04.04/3",
         "tags": "lv,divas_puses",
-        "timenote": "Alberts-Dabolins-00.00.1912",
+        "url_timenote": "Alberts-Dabolins-00.00.1912",
     }
   );
 })();

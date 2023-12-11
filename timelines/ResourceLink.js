@@ -13,9 +13,9 @@ class ResourceLink {
     }
 
     static timeNote(entry) {
-        if (entry.timenote) {
+        if (entry.url_timenote) {
             let result = document.createElement('a');
-            result.setAttribute('href', 'https://timenote.info/lv/' + entry.timenote);
+            result.setAttribute('href', 'https://timenote.info/lv/' + entry.url_timenote);
             result.textContent = '[TimeNote]';
             return result;
         }
