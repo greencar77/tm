@@ -34,6 +34,10 @@ class PersonListView extends View {
                     "title": "Status",
                     "byPrefix": "status_",
                 },
+                {
+                    "title": "URL",
+                    "byPrefix": "url_",
+                },
             ],
             "containerFn": () => this.createContainerTable,
         };

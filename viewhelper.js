@@ -56,16 +56,14 @@ function expandDates(arr) {
 
 function populateTags(arr) {
     arr.forEach(e => {
-        if (e.url_wiki) {
-            e.tags.push('url_wiki');
-        } else {
-            e.tags.push('url_wiki-');
-        }
-        if (e.url_timenote) {
-            e.tags.push('url_timenote');
-        } else {
-            e.tags.push('url_timenote-');
-        }
+        ['url_wiki', 'url_timenote', 'url_historia']
+            .forEach(tag => {
+                if (e[tag]) {
+                    e.tags.push(tag);
+                } else {
+                    e.tags.push(tag + '-');
+                }
+            });
         });
 }
 

@@ -21,4 +21,14 @@ class ResourceLink {
         }
         return '';
     }
+
+    static historia(entry) {
+        if (entry.url_historia) {
+            let result = document.createElement('a');
+            result.setAttribute('href', 'https://www.historia.lv/personas/' + entry.url_historia);
+            result.textContent = '[Historia]';
+            return result;
+        }
+        return '';
+    }
 }

@@ -83,6 +83,7 @@ const fyfwmby6543_persons = [
         "d": "1877.09.04-1942.09.20",
         "tags": "lv,min_for",
         "url_wiki": "https://lv.wikipedia.org/wiki/K%C4%81rlis_Ulmanis",
+        "url_historia": "ulmanis-karlis-augusts-vilhelms",
     },
     {
         "id": "uzuqqs",
