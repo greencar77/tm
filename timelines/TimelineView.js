@@ -57,17 +57,15 @@ class TimelineView extends View {
         let birthDeathEl = document.createElement('p');
         birthDeathEl.textContent = createDisplayDate(this.entry.start) + ' - ' + createDisplayDate(this.entry.end);
         div.appendChild(birthDeathEl);
-        if (this.entry.wikiUrl) {
-            let wikiA = document.createElement('a');
-            wikiA.setAttribute('href', this.entry.wikiUrl);
-            wikiA.textContent = '[Wiki]';
-            div.appendChild(wikiA);
+
+        let link;
+        link = ResourceLink.wiki(this.entry);
+        if (link) {
+            div.appendChild(link);
         }
-        if (this.entry.timenote) {
-            let wikiA = document.createElement('a');
-            wikiA.setAttribute('href', 'https://timenote.info/lv/' + this.entry.timenote);
-            wikiA.textContent = '[TimeNote]';
-            div.appendChild(wikiA);
+        link = ResourceLink.timeNote(this.entry);
+        if (link) {
+            div.appendChild(link);
         }
         parent.appendChild(div);
     }
