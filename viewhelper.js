@@ -73,6 +73,7 @@ function asYears(days) {
 
 function createDisplayDate(date) {
     switch(date.prec) {
+        case -1: return '...';
         case 0: return '...';
         case 1: return date.date.substring(0, 4);
         case 2: return date.date.substring(0, 7);
