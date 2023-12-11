@@ -29,9 +29,9 @@ td {
 }
 
 #date {
-    /*text-align: center;*/
     font-size: 2.1em;
     font-weight: bold;
+    margin-top: 10px;
 }
 
 .eventTable {
