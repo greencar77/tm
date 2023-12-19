@@ -160,3 +160,15 @@ var fyfwmby6543_7pqeas = [
         'v': '3. apcietinājums ar izsūtījumu uz Altaju',
     },
 ];
+
+(() => {
+  registerPerson(
+    {
+        "id": "xy95ud",
+        "name": "Vilhelms", "surname": "Munters",
+        "d": "1898.07.25-1967.01.11",
+        "tags": "lv,min_for",
+        "url_enc": "118211-Vilhelms-Munters",
+    }
+  );
+})();

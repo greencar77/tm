@@ -5,7 +5,7 @@
     {
         "id": "efx38k",
         "name": "Konstantīns", "surname": "Čakste",
-        "tags": "lv",
+        "tags": "lv,org_lcp",
         "d": "1901.07.26-1945.02.22",
         "url_wiki": "https://lv.wikipedia.org/wiki/Konstant%C4%ABns_%C4%8Cakste",
     }
