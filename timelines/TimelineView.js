@@ -71,6 +71,10 @@ class TimelineView extends View {
         if (link) {
             div.appendChild(link);
         }
+        link = ResourceLink.enciklopedija(this.entry);
+        if (link) {
+            div.appendChild(link);
+        }
         parent.appendChild(div);
     }
 

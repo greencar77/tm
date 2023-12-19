@@ -31,4 +31,14 @@ class ResourceLink {
         }
         return '';
     }
+
+    static enciklopedija(entry) {
+        if (entry.url_enc) {
+            let result = document.createElement('a');
+            result.setAttribute('href', 'https://enciklopedija.lv/skirklis/' + entry.url_enc);
+            result.textContent = '[Enciklopēdija]';
+            return result;
+        }
+        return '';
+    }
 }

@@ -47,6 +47,9 @@ function expandDates(arr) {
             e.start = createDateFromRichString(parts[0]);
             e.end = createDateFromRichString(parts[1]);
         } else {
+            if (e.d.length != '0000.00.00'.length) {
+                alert('Invalid dates: ' + e.d + ' ' + e.id);
+            }
             e.start = createDateFromRichString(e.d);
             e.end = createDateFromRichString(e.d);
         }
@@ -56,7 +59,7 @@ function expandDates(arr) {
 
 function populateTags(arr) {
     arr.forEach(e => {
-        ['url_wiki', 'url_timenote', 'url_historia']
+        ['url_wiki', 'url_timenote', 'url_historia', 'url_enc']
             .forEach(tag => {
                 if (e[tag]) {
                     e.tags.push(tag);
