@@ -2,6 +2,30 @@
 
 class ResourceLink {
 
+    static appendAllLinks(parent, entry) {
+        let link;
+        link = ResourceLink.wiki(entry);
+        if (link) {
+            parent.appendChild(link);
+        }
+        link = ResourceLink.timeNote(entry);
+        if (link) {
+            parent.appendChild(link);
+        }
+        link = ResourceLink.historia(entry);
+        if (link) {
+            parent.appendChild(link);
+        }
+        link = ResourceLink.enciklopedija(entry);
+        if (link) {
+            parent.appendChild(link);
+        }
+        link = ResourceLink.literatura(entry);
+        if (link) {
+            parent.appendChild(link);
+        }
+    }
+
     static wiki(entry) {
         if (entry.url_wiki) {
             let result = document.createElement('a');
@@ -37,6 +61,16 @@ class ResourceLink {
             let result = document.createElement('a');
             result.setAttribute('href', 'https://enciklopedija.lv/skirklis/' + entry.url_enc);
             result.textContent = '[Enciklopēdija]';
+            return result;
+        }
+        return '';
+    }
+
+    static literatura(entry) {
+        if (entry.url_lit) {
+            let result = document.createElement('a');
+            result.setAttribute('href', 'https://www.literatura.lv/personas/' + entry.url_lit);
+            result.textContent = '[literatura]';
             return result;
         }
         return '';

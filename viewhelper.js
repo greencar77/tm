@@ -47,7 +47,7 @@ function expandDates(arr) {
             e.start = createDateFromRichString(parts[0]);
             e.end = createDateFromRichString(parts[1]);
         } else {
-            if (e.d.length != '0000.00.00'.length) {
+            if (e.d.length != '0000.00.00'.length && e.d.length != '0000.00.00/0'.length) {
                 alert('Invalid dates: ' + e.d + ' ' + e.id);
             }
             e.start = createDateFromRichString(e.d);

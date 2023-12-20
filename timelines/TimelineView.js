@@ -58,23 +58,7 @@ class TimelineView extends View {
         birthDeathEl.textContent = createDisplayDate(this.entry.start) + ' - ' + createDisplayDate(this.entry.end);
         div.appendChild(birthDeathEl);
 
-        let link;
-        link = ResourceLink.wiki(this.entry);
-        if (link) {
-            div.appendChild(link);
-        }
-        link = ResourceLink.timeNote(this.entry);
-        if (link) {
-            div.appendChild(link);
-        }
-        link = ResourceLink.historia(this.entry);
-        if (link) {
-            div.appendChild(link);
-        }
-        link = ResourceLink.enciklopedija(this.entry);
-        if (link) {
-            div.appendChild(link);
-        }
+        ResourceLink.appendAllLinks(div, this.entry);
         parent.appendChild(div);
     }
 
