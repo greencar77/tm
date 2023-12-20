@@ -172,3 +172,79 @@ var fyfwmby6543_7pqeas = [
     }
   );
 })();
+
+
+var fyfwmby6543_ni6e7h = [
+    {
+        'd': '1979.02.28',
+        'v': 'Intervija raidstacijai "Amerikas Balss"',
+    },
+    {
+        'd': '1985.12.23',
+        'v': 'Nomirst tirdzniecības centrā netālu no Vašingtonas ceļā uz tikšanos ar CIP darbinieku Mārtiņu Latsonu. Diagnoze - infarkts',
+    },
+    {
+        'd': '1956.01.01/1-1985.12.23',
+        'v': 'VDK aģents ar segvārdu "Ivars"',
+    },
+    {
+        'd': '1962.01.01/1-1985.12.23/0',
+        'v': 'LKP biedrs',
+    },
+    {
+        'd': '1976.01.01/1-1978.12.31/1',
+        'v': 'Strādā ANO Sekretariātā Ņujorkā',
+    },
+    {
+        'd': '1970.01.01/1-1976.12.31/1',
+        'v': 'Latvijas Kultūras komiteja kultūras sakariem ar tautiešiem ārzemēs - prezidija priekšsēdētājs',
+    },
+    {
+        'd': '1944.07.27',
+        'v': 'Klausās radiouztvērēju tēvoča saimniecībā netālu no Zaļeniekiem',
+    },
+    {
+        'd': '1941.08.15/2-1944.11.15/2',
+        'v': 'Dzīvo tēvoča saimniecībā "Ezergaiļi" netālu no Zaļeniekiem',
+    },
+    {
+        'd': '1984.07.24',
+        'v': 'Foto: Operas "A Quiet Place" starpbrīdī, Kenedija centrā, Vašingtonā',
+    },
+    {
+        'd': '1976.07.01/1-1985.12.23',
+        'v': 'ASV',
+    },
+    {
+        'd': '1976.07.01/1-1978.09.03',
+        'v': 'Pilda pienākumus PSRS uzdevumā',
+    },
+    {
+        'd': '1978.09.03-1985.12.23',
+        'v': 'Sarāvis saites ar PSRS',
+    },
+];
+
+
+(() => {
+  registerPerson(
+    {
+        "id": "0q4dkc",
+        "name": "Helēna", "surname": "Celmiņa",
+        "d": "1929.04.11-2017.02.01",
+        "tags": "lv",
+        "url_lit": "helena-celmina",
+        "url_wiki": "https://lv.wikipedia.org/wiki/Hel%C4%93na_Celmi%C5%86a",
+    }
+  );
+})();
+var fyfwmby6543_0q4dkc = [
+    {
+        'd': '1960.01.01/1-1962.12.31/1',
+        'v': 'Propagandas raidījums "Dzintarkrasts"',
+    },
+    {
+        'd': '1962.01.01/1-1966.12.31/1',
+        'v': 'Izsūtījumā Mordvijā',
+    },
+];

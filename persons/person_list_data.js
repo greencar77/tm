@@ -21,6 +21,7 @@ const fyfwmby6543_persons = [
         "d": "1931.12.17-1985.12.23",
         "tags": "lv",
         "url_wiki": "https://en.wikipedia.org/wiki/Imants_Le%C5%A1inskis",
+        "url_lit": "imants-lesinskis",
     },
     {
         "id": "7pqeas",
