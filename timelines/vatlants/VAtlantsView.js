@@ -1,9 +1,9 @@
 "use strict";
 
-class VAtlantsView extends View {
+class VAtlantsView extends TimelineView {
 
-    getId() {
-        return 'vatlants';
+    constructor(id) {
+        super(id);
     }
 
     getTitle() {
@@ -11,7 +11,7 @@ class VAtlantsView extends View {
     }
 
     render() {
-        console.log('Render SejaView');
+        console.log('Render VAtlantsView');
         let main = document.getElementById('mainview');
         let table = document.createElement('table');
         let data = fyfwmby6543_vatlants;

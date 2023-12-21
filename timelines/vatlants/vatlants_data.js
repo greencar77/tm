@@ -1,6 +1,15 @@
 "use strict";
 
-const fyfwmby6543_vatlants = [
+(() => {
+  registerTimeline(
+    {
+        "id": "vatlants",
+        "title": "Pasaules vēstures atlants",
+        "d": "1900.01.01/1-2000.12.31/1",
+    }
+  );
+})();
+var fyfwmby6543_vatlants = [
     {
         'name': 'Karagājieni Polijā, Dānijā, Norvēģijā, Beļģijā, Francijā 1939/1945',
         'd': '1939.01.01/1-1940.12.31/1',

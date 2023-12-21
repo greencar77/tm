@@ -85,6 +85,9 @@ class ViewEngine {
         if (viewId == 'pers') {
             return new PersView(paramMap.get('p'));
         } else if (viewId == 'tl') {
+            if (paramMap.get('p') == 'vatlants') {
+                return new VAtlantsView(paramMap.get('p'));
+            }
             return new TimelineView(paramMap.get('p'));
         }
         switch(viewId) {
@@ -93,7 +96,6 @@ class ViewEngine {
 
             case 'seja_l': return new SejaView();
             case 'cakste_k': return new CaksteKView();
-            case 'vatlants': return new VAtlantsView();
         }
     }
 }
