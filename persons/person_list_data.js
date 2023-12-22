@@ -114,4 +114,11 @@ const fyfwmby6543_persons = [
         "tags": "mus",
         "url_wiki": "https://en.wikipedia.org/wiki/Giuseppe_Verdi",
     },
+    {
+        "id": "w0dya9",
+        "name": "Josifs", "surname": "Staļins",
+        "d": "1878.12.06-1953.03.05",
+        "url_wiki": "https://en.wikipedia.org/wiki/Joseph_Stalin",
+        "url_rulorg": "indexs5.html#stali",
+    },
 ];
