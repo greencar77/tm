@@ -71,7 +71,11 @@ class TimelineListView extends View {
         if (!e.id) {
             alert('Missing id ' + e.name + ' ' + e.surname);
         }
-        contentTd.innerHTML = '<a href="view.html?d=' + window.viewStatus.date + '&v=tl&p=' + e.id + '">' + e.title + '</a>';
+        if (e.url) {
+            contentTd.innerHTML = '<a href="' + e.url + '">' + e.title + '</a>' + ' (ārēja)';
+        } else {
+            contentTd.innerHTML = '<a href="view.html?d=' + window.viewStatus.date + '&v=tl&p=' + e.id + '">' + e.title + '</a>';
+        }
         tr.appendChild(contentTd);
 
         return tr;

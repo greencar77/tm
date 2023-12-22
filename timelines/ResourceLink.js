@@ -24,6 +24,10 @@ class ResourceLink {
         if (link) {
             parent.appendChild(link);
         }
+        link = ResourceLink.rulers(entry);
+        if (link) {
+            parent.appendChild(link);
+        }
     }
 
     static wiki(entry) {
@@ -71,6 +75,16 @@ class ResourceLink {
             let result = document.createElement('a');
             result.setAttribute('href', 'https://www.literatura.lv/personas/' + entry.url_lit);
             result.textContent = '[literatura]';
+            return result;
+        }
+        return '';
+    }
+
+    static rulers(entry) {
+        if (entry.url_rulorg) {
+            let result = document.createElement('a');
+            result.setAttribute('href', 'https://rulers.org/' + entry.url_rulorg);
+            result.textContent = '[rulers.org]';
             return result;
         }
         return '';
