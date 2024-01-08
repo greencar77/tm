@@ -54,4 +54,12 @@ var fyfwmby6543_janivs = [
         'd': '1944.06.23/0-1945.05.08/1',
         'v': 'Politiski neuzticamo vajāšanas: 4. posms - aktīvistu norīkošana uz zemnieku saimniecībām par mājlopu dzinējiem, nosūtīšana piespiedu darbos Vācijā vai ieslodzīšana Vācijas koncentrācijas nometnēs',
     },
+    {
+        'd': '1949.01.01/2-1949.03.25/3',
+        'v': 'Gatavošanās operācijai "Krasta banga" Baltijas iedzīvotāju izsūtīšanai uz PSRS. Sarakstu sastādīšana, dažāda līmeņa milicijas un čekas darbinieku nosūtīšana uz Latviju.',
+    },
+    {
+        'd': '1949.03.25/3-1949.04.30/2',
+        'v': 'PSRS drošības iestāžu operācija "Krasta banga" - uz dažādām PSRS vietām izsūtīti 42125 latvijas iedzīvotāji 33 ešelonos.',
+    },
 ];

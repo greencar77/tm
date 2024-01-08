@@ -269,4 +269,8 @@ var fyfwmby6543_i0yol9 = [
         'd': '1949.03.25/2-1956.10.12/2',
         'v': 'Ar bērna acīm pieredzēto zīmē uz papīra. Daļu kā pastkartes sūta uz Latviju, daļu saglabā māte',
     },
+    {
+        'd': '1949.03.25/3-1949.04.08/3',
+        'v': 'Kopā ar ģimeni tiek deportēta uz Omskas apgabala Odeskas rajonu.',
+    },
 ];
