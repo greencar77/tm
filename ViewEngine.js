@@ -85,23 +85,18 @@ class ViewEngine {
         if (viewId == 'pers') {
             return new PersView(paramMap.get('p'));
         } else if (viewId == 'tl') {
-            if (paramMap.get('p') == 'vatlants') {
-                return new VAtlantsView(paramMap.get('p'));
+            switch (paramMap.get('p')) {
+                case 'vatlants': return new VAtlantsView(paramMap.get('p'));
+                case 'rulers': return new RulersView(paramMap.get('p'));
             }
             return new TimelineView(paramMap.get('p'));
         }
-        switch(viewId) {
+        switch (viewId) {
             case 'person_list': return new PersonListView();
             case 'timeline_list': return new TimelineListView();
 
             case 'seja_l': return new SejaView();
             case 'cakste_k': return new CaksteKView();
         }
-    }
-}
-
-class View {
-    getTitle() {
-        return 'getTitle';
     }
 }
