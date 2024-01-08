@@ -32,6 +32,11 @@ function createProgress(value, max, className) {
         return '';
     }
     let widthPerc = Math.round(value * 100 * 10 / max) / 10; //1 decimal place
+    if (widthPerc == 0) {
+        return '<table width="100px" class="progressbar_table><tr class="progressbar_tr">'
+            + '<td class="progressbar_td2" height="12px"></td>'
+            + '</tr></table>';
+    }
     return '<table width="100px" class="progressbar_table><tr class="progressbar_tr">'
         + '<td class="' + (className? className : 'progressbar_td1') + '" width="' + widthPerc + '%" height="12px"></td>'
         + '<td class="progressbar_td2"></td>'
