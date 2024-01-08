@@ -27,7 +27,7 @@ const fyfwmby6543_persons = [
         "id": "7pqeas",
         "name": "Lidija", "surname": "Doroņina-Lasmane",
         "d": "1925.07.28-",
-        "tags": "lv",
+        "tags": "lv,repr_psrs",
         "url_wiki": "https://lv.wikipedia.org/wiki/Lidija_Doro%C5%86ina-Lasmane",
         "events": [
             {

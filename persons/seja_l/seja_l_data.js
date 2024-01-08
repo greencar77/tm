@@ -6,7 +6,7 @@
         "id": "lzjfld",
         "name": "Ludvigs", "surname": "Sēja",
         "d": "1885.06.02-1962.02.15",
-        "tags": "lv,min_for,org_lcp",
+        "tags": "lv,min_for,org_lcp,repr_psrs",
         "url_wiki": "https://lv.wikipedia.org/wiki/Ludvigs_S%C4%93ja",
         "url_timenote": "Ludvigs-Seja",
     }

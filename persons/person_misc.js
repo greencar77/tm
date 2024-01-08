@@ -232,7 +232,7 @@ var fyfwmby6543_ni6e7h = [
         "id": "0q4dkc",
         "name": "Helēna", "surname": "Celmiņa",
         "d": "1929.04.11-2017.02.01",
-        "tags": "lv",
+        "tags": "lv,repr_psrs",
         "url_lit": "helena-celmina",
         "url_wiki": "https://lv.wikipedia.org/wiki/Hel%C4%93na_Celmi%C5%86a",
     }
@@ -246,5 +246,27 @@ var fyfwmby6543_0q4dkc = [
     {
         'd': '1962.01.01/1-1966.12.31/1',
         'v': 'Izsūtījumā Mordvijā',
+    },
+];
+
+(() => {
+  registerPerson(
+    {
+        "id": "i0yol9",
+        "name": "Benita", "surname": "Eglīte",
+        "d": "1937.10.12/3-",
+        "tags": "lv,repr_psrs",
+        "url_wiki": "https://lv.wikipedia.org/wiki/Benita_Plezere",
+    }
+  );
+})();
+var fyfwmby6543_i0yol9 = [
+    {
+        'd': '1949.03.25/3-1956.10.12/3',
+        'v': 'Izsūtījumā Omskas apgabalā',
+    },
+    {
+        'd': '1949.03.25/2-1956.10.12/2',
+        'v': 'Ar bērna acīm pieredzēto zīmē uz papīra. Daļu kā pastkartes sūta uz Latviju, daļu saglabā māte',
     },
 ];
